@@ -154,7 +154,7 @@ namespace Rimedieval
             }
         }
 
-        public static bool MedievalGenepacksModIsActive = ModsConfig.IsActive("DankPyon.MedievalGenepacks");
+        public static bool MedievalGenepacksModIsActive = ModsConfig.IsActive("DankPyon.MedievalBiotech");
         public static bool IsAllowedForRimedieval(this ThingDef thingDef)
         {
             var defName = thingDef.defName;
@@ -296,7 +296,6 @@ namespace Rimedieval
             "PsychicSoothe",
             "PsychicDrone",
             "ToxicFallout",
-            "VolcanicWinter",
             "ShortCircuit",
             "ShipChunkDrop",
             "OrbitalTraderArrival",

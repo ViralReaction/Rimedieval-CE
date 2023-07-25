@@ -21,3 +21,8 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimedieval\1.4\Sourc
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimedieval\1.4\Source\Rimedieval\obj\Debug\Rimedieval.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimedieval\1.4\Source\Rimedieval\obj\Debug\Rimedieval.csproj.CopyComplete
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimedieval\1.4\Source\Rimedieval\obj\Debug\Rimedieval.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\2516523040\1.4\Assemblies\Rimedieval.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\2516523040\1.4\Source\Rimedieval\obj\Debug\Rimedieval.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\2516523040\1.4\Source\Rimedieval\obj\Debug\Rimedieval.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\2516523040\1.4\Source\Rimedieval\obj\Debug\Rimedieval.csproj.CopyComplete
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\2516523040\1.4\Source\Rimedieval\obj\Debug\Rimedieval.dll
