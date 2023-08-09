@@ -11,14 +11,14 @@
 				<value>
 					<li>MedievalBasic</li>
 				</value>
-</li>
+			</li>
 
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName="Apparel_BasicShirt"]/apparel/tags</xpath>
 				<value>
 					<li>MedievalBasic</li>
 				</value>
-</li>
+			</li>
 
 			<!-- ============ SPECIAL ============ -->
 
@@ -31,7 +31,7 @@
 						<li>MedievalBasic</li>
 					</apparelTags>
 				</value>
-</li>
+			</li>
 			<!-- Stranger in black -->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName="StrangerInBlack"]/apparelTags</xpath>
@@ -40,7 +40,7 @@
 						<li>MedievalBasic</li>
 					</apparelTags>
 				</value>
-</li>
+			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName="StrangerInBlack"]/apparelRequired</xpath>
 				<value>
@@ -50,7 +50,7 @@
 						<li>Apparel_PlateArmor</li>
 					</apparelRequired>
 				</value>
-</li>
+			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName="StrangerInBlack"]/weaponTags</xpath>
 				<value>
@@ -58,7 +58,7 @@
 						<li>NeolithicRangedChief</li>
 					</weaponTags>
 				</value>
-</li>
+			</li>
 
 			<!-- ============ MERCENARY ============ -->
 
@@ -71,7 +71,7 @@
 						<li>MedievalMilitary</li>
 					</apparelTags>
 				</value>
-</li>
+			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName="Grenadier_Destructive"]/weaponTags</xpath>
 				<value>
@@ -79,7 +79,7 @@
 						<li>NeolithicRangedDecent</li>
 					</weaponTags>
 				</value>
-</li>
+			</li>
 			<!-- Grenadier_EMP -->
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/PawnKindDef[defName="Grenadier_EMP"]</xpath>
@@ -89,7 +89,7 @@
 						<li>MedievalMilitary</li>
 					</apparelTags>
 				</value>
-</li>
+			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName="Grenadier_EMP"]/weaponTags</xpath>
 				<value>
@@ -97,7 +97,7 @@
 						<li>NeolithicRangedDecent</li>
 					</weaponTags>
 				</value>
-</li>
+			</li>
 			<!-- Grenadier_Smoke -->
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/PawnKindDef[defName="Grenadier_Smoke"]</xpath>
@@ -107,7 +107,7 @@
 						<li>MedievalMilitary</li>
 					</apparelTags>
 				</value>
-</li>
+			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName="Grenadier_Smoke"]/weaponTags</xpath>
 				<value>
@@ -115,7 +115,7 @@
 						<li>NeolithicRangedDecent</li>
 					</weaponTags>
 				</value>
-</li>
+			</li>
 			<!-- Mercenary_Gunner -->
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/PawnKindDef[defName="Mercenary_Gunner"]</xpath>
@@ -125,7 +125,7 @@
 						<li>MedievalMilitary</li>
 					</apparelTags>
 				</value>
-</li>
+			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/PawnKindDef[defName="Mercenary_Gunner"]</xpath>
 				<value>
@@ -135,7 +135,7 @@
 						<li>NeolithicRangedHeavy</li>
 					</weaponTags>
 				</value>
-</li>
+			</li>
 			<!-- Mercenary_Gunner_Acidifier -->
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/PawnKindDef[defName="Mercenary_Gunner_Acidifier"]</xpath>
@@ -145,7 +145,7 @@
 						<li>MedievalMilitary</li>
 					</apparelTags>
 				</value>
-</li>
+			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/PawnKindDef[defName="Mercenary_Gunner_Acidifier"]</xpath>
 				<value>
@@ -155,7 +155,7 @@
 						<li>NeolithicRangedHeavy</li>
 					</weaponTags>
 				</value>
-</li>
+			</li>
 			<!-- Mercenary_Sniper -->
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/PawnKindDef[defName="Mercenary_Sniper"]</xpath>
@@ -165,7 +165,7 @@
 						<li>MedievalMilitary</li>
 					</apparelTags>
 				</value>
-</li>
+			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/PawnKindDef[defName="Mercenary_Sniper"]</xpath>
 				<value>
@@ -173,7 +173,7 @@
 						<li>NeolithicRangedChief</li>
 					</weaponTags>
 				</value>
-</li>
+			</li>
 			<!-- Mercenary_Sniper_Acidifier -->
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/PawnKindDef[defName="Mercenary_Sniper_Acidifier"]</xpath>
@@ -183,7 +183,7 @@
 						<li>MedievalMilitary</li>
 					</apparelTags>
 				</value>
-</li>
+			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/PawnKindDef[defName="Mercenary_Sniper_Acidifier"]</xpath>
 				<value>
@@ -191,7 +191,7 @@
 						<li>NeolithicRangedChief</li>
 					</weaponTags>
 				</value>
-</li>
+			</li>
 			<!-- Mercenary_Slasher -->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName="Mercenary_Slasher"]/apparelTags</xpath>
@@ -201,7 +201,7 @@
 						<li>MedievalMilitary</li>
 					</apparelTags>
 				</value>
-</li>
+			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName="Mercenary_Slasher"]/weaponTags</xpath>
 				<value>
@@ -210,7 +210,7 @@
 						<li>MedievalMeleeDecent</li>
 					</weaponTags>
 				</value>
-</li>
+			</li>
 			<!-- Mercenary_Slasher_Acidifier -->
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/PawnKindDef[defName="Mercenary_Slasher_Acidifier"]</xpath>
@@ -220,7 +220,7 @@
 						<li>MedievalMilitary</li>
 					</apparelTags>
 				</value>
-</li>
+			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/PawnKindDef[defName="Mercenary_Slasher_Acidifier"]</xpath>
 				<value>
@@ -229,7 +229,7 @@
 						<li>MedievalMeleeDecent</li>
 					</weaponTags>
 				</value>
-</li>
+			</li>
 			<!-- Mercenary_Heavy -->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName="Mercenary_Heavy"]/apparelTags</xpath>
@@ -239,7 +239,7 @@
 						<li>MedievalMilitary</li>
 					</apparelTags>
 				</value>
-</li>
+			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName="Mercenary_Heavy"]/weaponTags</xpath>
 				<value>
@@ -247,7 +247,7 @@
 						<li>MedievalMeleeAdvanced</li>
 					</weaponTags>
 				</value>
-</li>
+			</li>
 			<!-- PirateBoss -->
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/PawnKindDef[defName="PirateBoss"]</xpath>
@@ -257,7 +257,7 @@
 						<li>MedievalMilitary</li>
 					</apparelTags>
 				</value>
-</li>
+			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/PawnKindDef[defName="PirateBoss"]</xpath>
 				<value>
@@ -266,7 +266,7 @@
 						<li>MedievalMeleeAdvanced</li>
 					</weaponTags>
 				</value>
-</li>
+			</li>
 			<!-- Mercenary_Elite -->
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/PawnKindDef[defName="Mercenary_Elite"]</xpath>
@@ -276,7 +276,7 @@
 						<li>MedievalMilitary</li>
 					</apparelTags>
 				</value>
-</li>
+			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/PawnKindDef[defName="Mercenary_Elite"]</xpath>
 				<value>
@@ -285,7 +285,7 @@
 						<li>NeolithicRangedHeavy</li>
 					</weaponTags>
 				</value>
-</li>
+			</li>
 			<!-- Mercenary_Elite_Acidifier -->
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/PawnKindDef[defName="Mercenary_Elite_Acidifier"]</xpath>
@@ -295,7 +295,7 @@
 						<li>MedievalMilitary</li>
 					</apparelTags>
 				</value>
-</li>
+			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/PawnKindDef[defName="Mercenary_Elite_Acidifier"]</xpath>
 				<value>
@@ -304,7 +304,7 @@
 						<li>NeolithicRangedHeavy</li>
 					</weaponTags>
 				</value>
-</li>
+			</li>
 
 			<!-- ============ PIRATE ============ -->
 
@@ -316,7 +316,7 @@
 						<li>MedievalBasic</li>
 					</apparelTags>
 				</value>
-</li>
+			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName="Drifter"]/weaponTags</xpath>
 				<value>
@@ -325,7 +325,7 @@
 						<li>NeolithicRangedBasic</li>
 					</weaponTags>
 				</value>
-</li>
+			</li>
 			<!-- Scavenger -->
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/PawnKindDef[defName="Scavenger"]</xpath>
@@ -334,7 +334,7 @@
 						<li>MedievalBasic</li>
 					</apparelTags>
 				</value>
-</li>
+			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName="Scavenger"]/weaponTags</xpath>
 				<value>
@@ -342,7 +342,7 @@
 						<li>NeolithicRangedHeavy</li>
 					</weaponTags>
 				</value>
-</li>
+			</li>
 			<!-- Thrasher -->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName="Thrasher"]/apparelTags</xpath>
@@ -351,7 +351,7 @@
 						<li>MedievalBasic</li>
 					</apparelTags>
 				</value>
-</li>
+			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName="Thrasher"]/weaponTags</xpath>
 				<value>
@@ -359,7 +359,7 @@
 						<li>MedievalMeleeDecent</li>
 					</weaponTags>
 				</value>
-</li>
+			</li>
 			<!-- Pirate -->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName="Pirate"]/apparelTags</xpath>
@@ -369,7 +369,7 @@
 						<li>MedievalMilitary</li>
 					</apparelTags>
 				</value>
-</li>
+			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName="Pirate"]/weaponTags</xpath>
 				<value>
@@ -378,7 +378,7 @@
 						<li>NeolithicRangedHeavy</li>
 					</weaponTags>
 				</value>
-</li>
+			</li>
 
 			<!-- ============ OUTLANDER ============ -->
 
@@ -390,7 +390,7 @@
 						<li>MedievalBasic</li>
 					</apparelTags>
 				</value>
-</li>
+			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName="Villager"]/weaponTags</xpath>
 				<value>
@@ -399,7 +399,7 @@
 						<li>NeolithicRangedBasic</li>
 					</weaponTags>
 				</value>
-</li>
+			</li>
 			<!-- Town_Guard -->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName="Town_Guard"]/apparelTags</xpath>
@@ -409,7 +409,7 @@
 						<li>MedievalMilitary</li>
 					</apparelTags>
 				</value>
-</li>
+			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName="Town_Guard"]/weaponTags</xpath>
 				<value>
@@ -419,7 +419,7 @@
 						<li>NeolithicRangedDecent</li>
 					</weaponTags>
 				</value>
-</li>
+			</li>
 			<!-- Town_Trader -->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName="Town_Trader"]/apparelTags</xpath>
@@ -428,7 +428,7 @@
 						<li>MedievalBasic</li>
 					</apparelTags>
 				</value>
-</li>
+			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName="Town_Trader"]/weaponTags</xpath>
 				<value>
@@ -436,7 +436,7 @@
 						<li>MedievalMeleeBasic</li>
 					</weaponTags>
 				</value>
-</li>
+			</li>
 			<!-- Town_Councilman -->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName="Town_Councilman"]/apparelTags</xpath>
@@ -445,7 +445,7 @@
 						<li>MedievalBasic</li>
 					</apparelTags>
 				</value>
-</li>
+			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName="Town_Councilman"]/weaponTags</xpath>
 				<value>
@@ -453,7 +453,7 @@
 						<li>MedievalMeleeDecent</li>
 					</weaponTags>
 				</value>
-</li>
+			</li>
 
 			<!-- ============ PLAYER ============ -->
 
@@ -465,7 +465,7 @@
 						<li>MedievalBasic</li>
 					</apparelTags>
 				</value>
-</li>
+			</li>
 
 			<!-- ============ SPACER ============ -->
 
@@ -477,7 +477,7 @@
 						<li>MedievalBasic</li>
 					</apparelTags>
 				</value>
-</li>
+			</li>
 
 			<!-- SpaceRefugee_Clothed -->
 			<li Class="PatchOperationAdd">
@@ -487,7 +487,7 @@
 						<li>MedievalBasic</li>
 					</apparelTags>
 				</value>
-</li>
+			</li>
 
 			<!-- AncientSoldier -->
 			<li Class="PatchOperationReplace">
@@ -498,7 +498,7 @@
 						<li>MedievalMilitary</li>
 					</apparelTags>
 				</value>
-</li>
+			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName="AncientSoldier"]/weaponTags</xpath>
 				<value>
@@ -511,7 +511,7 @@
 						<li>MedievalMeleeAdvanced</li>
 					</weaponTags>
 				</value>
-</li>
+			</li>
 
 		</operations>
 
@@ -532,7 +532,7 @@
 							<li>MedievalBasic</li>
 						</apparelTags>
 					</value>
-</li>
+				</li>
 
 				<!-- Empire_Common_Trader -->
 				<li Class="PatchOperationReplace">
@@ -542,7 +542,7 @@
 							<li>MedievalBasic</li>
 						</apparelTags>
 					</value>
-</li>
+				</li>
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/PawnKindDef[defName="Empire_Common_Trader"]/weaponTags</xpath>
 					<value>
@@ -551,7 +551,7 @@
 							<li>MedievalMeleeBasic</li>
 						</weaponTags>
 					</value>
-</li>
+				</li>
 
 				<!-- Empire_Common_Laborer -->
 				<li Class="PatchOperationReplace">
@@ -561,7 +561,7 @@
 							<li>MedievalBasic</li>
 						</apparelTags>
 					</value>
-</li>
+				</li>
 
 				<!-- Empire_Fighter_Trooper -->
 				<li Class="PatchOperationAdd">
@@ -572,7 +572,7 @@
 							<li>MedievalMilitary</li>
 						</apparelTags>
 					</value>
-</li>
+				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/PawnKindDef[defName="Empire_Fighter_Trooper"]</xpath>
 					<value>
@@ -580,7 +580,7 @@
 							<li>Apparel_PlateArmor</li>
 						</apparelRequired>
 					</value>
-</li>
+				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/PawnKindDef[defName="Empire_Fighter_Trooper"]</xpath>
 					<value>
@@ -589,7 +589,7 @@
 							<li>NeolithicRangedDecent</li>
 						</weaponTags>
 					</value>
-</li>
+				</li>
 
 				<!-- Empire_Fighter_Janissary -->
 				<li Class="PatchOperationAdd">
@@ -600,7 +600,7 @@
 							<li>MedievalMilitary</li>
 						</apparelTags>
 					</value>
-</li>
+				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/PawnKindDef[defName="Empire_Fighter_Janissary"]</xpath>
 					<value>
@@ -608,7 +608,7 @@
 							<li>Apparel_PlateArmor</li>
 						</apparelRequired>
 					</value>
-</li>
+				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/PawnKindDef[defName="Empire_Fighter_Janissary"]</xpath>
 					<value>
@@ -617,7 +617,7 @@
 							<li>NeolithicRangedDecent</li>
 						</weaponTags>
 					</value>
-</li>
+				</li>
 
 				<!-- Empire_Fighter_Champion -->
 				<li Class="PatchOperationAdd">
@@ -628,7 +628,7 @@
 							<li>MedievalMilitary</li>
 						</apparelTags>
 					</value>
-</li>
+				</li>
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/PawnKindDef[defName="Empire_Fighter_Champion"]/apparelRequired</xpath>
 					<value>
@@ -636,7 +636,7 @@
 							<li>Apparel_PlateArmor</li>
 						</apparelRequired>
 					</value>
-</li>
+				</li>
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/PawnKindDef[defName="Empire_Fighter_Champion"]/weaponTags</xpath>
 					<value>
@@ -645,7 +645,7 @@
 							<li>MedievalMeleeAdvanced</li>
 						</weaponTags>
 					</value>
-</li>
+				</li>
 
 				<!-- Empire_Fighter_Cataphract -->
 				<li Class="PatchOperationAdd">
@@ -656,7 +656,7 @@
 							<li>MedievalMilitary</li>
 						</apparelTags>
 					</value>
-</li>
+				</li>
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/PawnKindDef[defName="Empire_Fighter_Cataphract"]/apparelRequired</xpath>
 					<value>
@@ -664,7 +664,7 @@
 							<li>Apparel_PlateArmor</li>
 						</apparelRequired>
 					</value>
-</li>
+				</li>
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/PawnKindDef[defName="Empire_Fighter_Cataphract"]/weaponTags</xpath>
 					<value>
@@ -675,7 +675,7 @@
 							<li>NeolithicRangedDecent</li>
 						</weaponTags>
 					</value>
-</li>
+				</li>
 
 				<!-- Empire_Fighter_StellicGuardRanged -->
 				<li Class="PatchOperationAdd">
@@ -686,7 +686,7 @@
 							<li>MedievalMilitary</li>
 						</apparelTags>
 					</value>
-</li>
+				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]</xpath>
 					<value>
@@ -694,7 +694,7 @@
 							<li>Apparel_PlateArmor</li>
 						</apparelRequired>
 					</value>
-</li>
+				</li>
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardRanged"]/weaponTags</xpath>
 					<value>
@@ -703,7 +703,7 @@
 							<li>NeolithicRangedDecent</li>
 						</weaponTags>
 					</value>
-</li>
+				</li>
 
 				<!-- Empire_Fighter_StellicGuardMelee -->
 				<li Class="PatchOperationAdd">
@@ -714,7 +714,7 @@
 							<li>MedievalMilitary</li>
 						</apparelTags>
 					</value>
-</li>
+				</li>
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/PawnKindDef[defName="Empire_Fighter_StellicGuardMelee"]/apparelRequired</xpath>
 					<value>
@@ -722,7 +722,7 @@
 							<li>Apparel_PlateArmor</li>
 						</apparelRequired>
 					</value>
-</li>
+				</li>
 
 				<!-- 
 
@@ -749,7 +749,7 @@ DOESN'T WORK
 							<li>MedievalBasic</li>
 						</apparelTags>
 					</value>
-</li>
+				</li>
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/PawnKindDef[defName="Refugee"]/weaponTags</xpath>
 					<value>
@@ -758,7 +758,7 @@ DOESN'T WORK
 							<li>NeolithicRangedBasic</li>
 						</weaponTags>
 					</value>
-</li>
+				</li>
 			</operations>
 
 

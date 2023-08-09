@@ -860,11 +860,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\2516523040\\1.4\\Source\\Rimedieval\\Rimedieval.csproj",
+      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Rimedieval-CE\\1.4\\Source\\Rimedieval\\Rimedieval.csproj",
       "projectName": "Rimedieval",
-      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\2516523040\\1.4\\Source\\Rimedieval\\Rimedieval.csproj",
+      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Rimedieval-CE\\1.4\\Source\\Rimedieval\\Rimedieval.csproj",
       "packagesPath": "C:\\Users\\Enurta\\.nuget\\packages\\",
-      "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\2516523040\\1.4\\Source\\Rimedieval\\obj\\",
+      "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Rimedieval-CE\\1.4\\Source\\Rimedieval\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
