@@ -26,6 +26,8 @@ Rimedieval without mucking with pawn generation.
 	</incompatibleWith>
 	<loadAfter>
 		<li>brrainz.harmony</li>
-		<li>accurex.medievalempireoverhaul</li>
 	</loadAfter>
+	<loadBefore>
+		<li>accurex.medievalempireoverhaul</li>
+	</loadBefore>
 </ModMetaData>
