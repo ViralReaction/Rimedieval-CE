@@ -157,6 +157,7 @@ namespace Rimedieval
         public static bool MedievalGenepacksModIsActive = ModsConfig.IsActive("DankPyon.MedievalBiotech");
         public static bool IsAllowedForRimedieval(this ThingDef thingDef)
         {
+            if (thingDef is null) return true;
             var defName = thingDef.defName;
             if (MedievalGenepacksModIsActive is false)
             {
@@ -311,11 +312,6 @@ namespace Rimedieval
             "EndGame_ShipEscape",
             "LongRangeMineralScannerLump",
             "ThreatReward_MechPods_MiscReward",
-            "AncientComplex_Standard",
-            "Hack_Spacedrone",
-            "OpportunitySite_AncientComplex",
-            "AncientComplex_Mission",
-            "Hack_WorshippedTerminal",
             "OpportunitySite_AncientComplex_Mechanitor",
             "MechanitorShip",
             "PollutionDump",
