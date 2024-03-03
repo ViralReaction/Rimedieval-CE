@@ -153,17 +153,20 @@ namespace Rimedieval
                 }
             }
         }
-
-        public static bool MedievalGenepacksModIsActive = ModsConfig.IsActive("DankPyon.MedievalBiotech");
+        public static bool MedievalBiotechModIsActive = ModsConfig.IsActive("DankPyon.MedievalBiotech");
+        public static bool MedievalGenepacksModIsActive = ModsConfig.IsActive("DankPyon.MedievalGenepacks");
         public static bool IsAllowedForRimedieval(this ThingDef thingDef)
         {
             if (thingDef is null) return true;
             var defName = thingDef.defName;
             if (MedievalGenepacksModIsActive is false)
             {
-                if (defName == "Genepack" || defName == "ArchiteCapsule")
+                if (MedievalBiotechModIsActive is false)
                 {
-                    return false;
+                    if (defName == "Genepack" || defName == "ArchiteCapsule")
+                    {
+                        return false;
+                    }
                 }
             }
 
