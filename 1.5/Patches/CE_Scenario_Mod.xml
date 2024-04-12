@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		
+			<match Class="PatchOperationSequence">
+				<operations>
+					
+					<li Class="PatchOperationConditional">
+						<xpath>Defs/ScenarioDef[defName="Crashlanded"]/scenario/parts/li[thingDef="Ammo_303British_FMJ"]</xpath>
+						<match Class="PatchOperationRemove">
+							<xpath>Defs/ScenarioDef[defName="Crashlanded"]/scenario/parts/li[thingDef="Ammo_303British_FMJ"]</xpath>
+						</match>
+					</li>
+					
+					<li Class="PatchOperationConditional">
+						<xpath>Defs/ScenarioDef[defName="Crashlanded"]/scenario/parts/li[thingDef="Ammo_44Magnum_FMJ"]</xpath>
+						<match Class="PatchOperationRemove">
+							<xpath>Defs/ScenarioDef[defName="Crashlanded"]/scenario/parts/li[thingDef="Ammo_44Magnum_FMJ"]</xpath>
+						</match>
+					</li>
+					
+					<li Class="PatchOperationConditional">
+						<xpath>Defs/ScenarioDef[defName="TheRichExplorer"]/scenario/parts/li[thingDef="Ammo_6x24mmCharged"]</xpath>
+						<match Class="PatchOperationRemove">
+							<xpath>Defs/ScenarioDef[defName="TheRichExplorer"]/scenario/parts/li[thingDef="Ammo_6x24mmCharged"]</xpath>
+						</match>
+					</li>
+					
+				</operations>
+			</match>
+		
+	</Operation>
+		
+</Patch>
