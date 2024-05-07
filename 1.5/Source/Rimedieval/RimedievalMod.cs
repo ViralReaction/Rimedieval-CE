@@ -16,12 +16,10 @@ namespace Rimedieval
     class RimedievalMod : Mod
     {
         public const string ModName = "Rimedieval";
-        public static RimedievalSettings settings;
 
         public static Harmony harmony;
         public RimedievalMod(ModContentPack pack) : base(pack)
         {
-            settings = GetSettings<RimedievalSettings>();
             harmony = new Harmony("Ogam.Rimedieval");
             harmony.Patch(AccessTools.Method(typeof(PlayerKnowledgeDatabase), "ReloadAndRebind"),
                 postfix: new HarmonyMethod(AccessTools.Method(typeof(DefCleaner), nameof(DefCleaner.ClearDefs))));
@@ -48,7 +46,6 @@ namespace Rimedieval
         public override void DoSettingsWindowContents(Rect inRect)
         {
             base.DoSettingsWindowContents(inRect);
-            settings.DoSettingsWindowContents(inRect);
         }
         public override string SettingsCategory()
         {

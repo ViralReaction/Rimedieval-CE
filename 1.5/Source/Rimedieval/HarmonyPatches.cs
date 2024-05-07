@@ -83,56 +83,6 @@ namespace Rimedieval
         }
     }
 
-    [HarmonyPatch(typeof(ThingStuffPair), "Commonality", MethodType.Getter)]
-    public class Commonality_Patch
-    {
-        public static Pawn pawnToLookInto;
-        public static bool Prefix(ThingStuffPair __instance, ref float __result)
-        {
-            Faction faction = pawnToLookInto?.Faction;
-            if (faction != null)
-            {
-                if (faction.def.techLevel > TechLevel.Medieval)
-                {
-                    FactionTracker.Instance.SetNewTechLevelForFaction(faction.def);
-                }
-                if (faction.def.techLevel <= TechLevel.Medieval && DefCleaner.GetTechLevelFor(__instance.thing) > TechLevel.Medieval)
-                {
-                    __result = 0f;
-                    return false;
-                }
-            }
-            return true;
-        }
-        public static void Postfix(ThingStuffPair __instance, ref float __result)
-        {
-            if (pawnToLookInto?.Faction != null && !pawnToLookInto.Faction.IsPlayer)
-            {
-                if (pawnToLookInto.Faction.def.techLevel <= TechLevel.Medieval && __instance.thing.IsRangedWeapon && __instance.thing.Verbs.Any(x => x.muzzleFlashScale > 0))
-                {
-                    if (__result > 0)
-                    {
-                        __result *= 0.25f;
-                    }
-                }
-            }
-        }
-    }
-
-    [HarmonyPatch(typeof(Faction), "GetReportText", MethodType.Getter)]
-    public static class GetReportText_Patch
-    {
-        public static void Postfix(Faction __instance, ref string __result)
-        {
-            if (__instance.def.techLevel > TechLevel.Medieval)
-            {
-                FactionTracker.Instance.SetNewTechLevelForFaction(__instance.def);
-            }
-            __result += "\n\n" + "RM.FactionTechLevelInfo".Translate(__instance.def.techLevel.ToStringHuman());
-        }
-    }
-
-
     [HarmonyPatch(typeof(RaidStrategyWorker), "MinimumPoints")]
     public static class MinimumPoints_Patch
     {
@@ -149,19 +99,6 @@ namespace Rimedieval
         }
     }
 
-    [HarmonyPatch(typeof(IncidentWorker_RaidEnemy))]
-    [HarmonyPatch("FactionCanBeGroupSource")]
-    public static class FactionCanBeGroupSourcePatch
-    {
-        public static void Postfix(ref bool __result, Faction f)
-        {
-            if (__result && f?.def == FactionDefOf.Mechanoid && RimedievalMod.settings.disableMechanoids)
-            {
-                __result = false;
-            }
-        }
-    }
-
     [HarmonyPatch(typeof(IncidentWorker_OrbitalTraderArrival))]
     [HarmonyPatch("TryExecuteWorker")]
     public static class IncidentWorker_OrbitalTraderArrival_TryExecuteWorkerPatch
@@ -169,117 +106,6 @@ namespace Rimedieval
         public static bool Prefix(IncidentParms parms)
         {
             return false;
-        }
-    }
-
-    [HarmonyPatch(typeof(IncidentWorker_RaidEnemy))]
-    [HarmonyPatch("TryExecuteWorker")]
-    public static class TryExecuteWorkerPatch
-    {
-        public static bool Prefix(IncidentParms parms)
-        {
-            return parms.faction == null || parms.faction.def != FactionDefOf.Mechanoid || !RimedievalMod.settings.disableMechanoids;
-        }
-    }
-
-    [HarmonyPatch(typeof(IncidentWorker_RaidEnemy))]
-    [HarmonyPatch("TryResolveRaidFaction")]
-    public static class TryResolveRaidFactionPatch
-    {
-        public static void Postfix(ref bool __result, IncidentParms parms)
-        {
-            if (__result && parms.faction?.def == FactionDefOf.Mechanoid && RimedievalMod.settings.disableMechanoids)
-            {
-                __result = false;
-            }
-        }
-    }
-
-    [HarmonyPatch(typeof(Pawn))]
-    [HarmonyPatch("SpawnSetup")]
-    public static class Pawn_SpawnSetup
-    {
-        public static void Postfix(Pawn __instance)
-        {
-            if (RimedievalMod.settings.disableMechanoids && __instance.RaceProps.IsMechanoid)
-            {
-                __instance.Destroy();
-            }
-        }
-    }
-
-    [HarmonyPatch(typeof(GenStep_MechCluster))]
-    [HarmonyPatch("Generate")]
-    public static class Generate
-    {
-        public static bool Prefix()
-        {
-            return !RimedievalMod.settings.disableMechanoids;
-        }
-    }
-
-    [HarmonyPatch(typeof(IncidentWorker_MechCluster))]
-    [HarmonyPatch("TryExecuteWorker")]
-    public static class TryExecuteWorker
-    {
-        public static bool Prefix(ref bool __result)
-        {
-            if (RimedievalMod.settings.disableMechanoids)
-            {
-                __result = false;
-                return false;
-            }
-            return true;
-        }
-    }
-
-    [HarmonyPatch(typeof(MechClusterUtility))]
-    [HarmonyPatch("SpawnCluster")]
-    public static class SpawnCluster
-    {
-        public static bool Prefix(ref List<Thing> __result)
-        {
-            if (RimedievalMod.settings.disableMechanoids)
-            {
-                __result = new List<Thing>();
-                return false;
-            }
-            return true;
-        }
-    }
-
-    [HarmonyPatch(typeof(QuestNode_GetFaction))]
-    [HarmonyPatch("IsGoodFaction")]
-    public static class IsGoodFaction_Patch
-    {
-        public static bool Prefix(ref bool __result, Faction faction, Slate slate)
-        {
-            if (RimedievalMod.settings.disableMechanoids && faction == Faction.OfMechanoids)
-            {
-                __result = false;
-                return false;
-            }
-            return true;
-        }
-    }
-
-    [HarmonyPatch(typeof(ThreatsGenerator))]
-    [HarmonyPatch("GetPossibleIncidents")]
-    public static class GetPossibleIncidents_Patch
-    {
-        public static IEnumerable<IncidentDef> Postfix(IEnumerable<IncidentDef> __result)
-        {
-            foreach (IncidentDef r in __result)
-            {
-                if (r == IncidentDefOf.MechCluster && RimedievalMod.settings.disableMechanoids)
-                {
-                    continue;
-                }
-                else
-                {
-                    yield return r;
-                }
-            }
         }
     }
 
