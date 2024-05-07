@@ -154,53 +154,16 @@ namespace Rimedieval
             }
         }
         public static bool MedievalBiotechModIsActive = ModsConfig.IsActive("DankPyon.MedievalBiotech");
-        public static bool MedievalGenepacksModIsActive = ModsConfig.IsActive("DankPyon.MedievalGenepacks");
         public static bool IsAllowedForRimedieval(this ThingDef thingDef)
         {
             if (thingDef is null) return true;
             var defName = thingDef.defName;
-            if (MedievalGenepacksModIsActive is false)
+            if (!MedievalBiotechModIsActive)
             {
-                if (MedievalBiotechModIsActive is false)
-                {
                     if (defName == "Genepack" || defName == "ArchiteCapsule")
                     {
                         return false;
                     }
-                }
-            }
-
-            if (defName.Contains("Psytrainer") || defName.Contains("Neurotrainer"))
-            {
-                return true;
-            }
-
-            var allowedResearchProjects = DefDatabase<ResearchProjectDef>.AllDefsListForReading.GetAllowedProjectDefs();
-            if (thingDef.recipeMaker != null)
-            {
-                if (thingDef.recipeMaker.researchPrerequisite != null)
-                {
-                    if (allowedResearchProjects.Contains(thingDef.recipeMaker.researchPrerequisite))
-                    {
-                        return true;
-                    }
-                }
-                if (thingDef.recipeMaker.researchPrerequisites?.Any() ?? false)
-                {
-                    var project = thingDef.recipeMaker.researchPrerequisites.MaxBy(x => (int)x.techLevel);
-                    if (allowedResearchProjects.Contains(project))
-                    {
-                        return true;
-                    }
-                }
-            }
-            if (thingDef.researchPrerequisites?.Any() ?? false)
-            {
-                var project = thingDef.researchPrerequisites.MaxBy(x => (int)x.techLevel);
-                if (allowedResearchProjects.Contains(project))
-                {
-                    return true;
-                }
             }
             var techLevel = GetTechLevelFor(thingDef);
             if (techLevel < TechLevel.Industrial)
@@ -210,20 +173,6 @@ namespace Rimedieval
             return false;
         }
 
-
-        public static List<ResearchProjectDef> GetAllowedProjectDefs(this List<ResearchProjectDef> list)
-        {
-            if (RimedievalMod.settings.restrictTechToPreIndustrialOnly)
-            {
-                var microElectronics = DefDatabase<ResearchProjectDef>.GetNamed("MicroelectronicsBasics");
-                list = list.Where(x => x.techLevel <= TechLevel.Industrial && x != microElectronics && !x.ContainsTechProjectAsPrerequisite(microElectronics)).ToList();
-            }
-            else
-            {
-                list = list.Where(x => x.techLevel <= TechLevel.Medieval).ToList();
-            }
-            return list;
-        }
         public static void ClearDefs()
         {
             foreach (var def in DefDatabase<PreceptDef>.defsList.Where(x => preceptsToRemove.Contains(x.defName)))
@@ -246,7 +195,6 @@ namespace Rimedieval
             {
                 mapGen.genSteps.RemoveAll(x => genStepsToRemove.Contains(x.defName));
             }
-            DefDatabase<GenStepDef>.defsList.RemoveAll(x => genStepsToRemove.Contains(x.defName));
             DefDatabase<IncidentDef>.defsList.RemoveAll(x => incidentsToRemove.Contains(x.defName));
             DefDatabase<QuestScriptDef>.defsList.RemoveAll(x => questsToRemove.Contains(x.defName));
             DefDatabase<IdeoPresetDef>.defsList.RemoveAll(x => ideoPresetsToRemove.Contains(x.defName));
@@ -267,8 +215,6 @@ namespace Rimedieval
             "Biosculpting_Accelerated",
             "AgeReversal_Demanded",
             "BioSculpter_Despised",
-            "NutrientPasteEating_DontMind",
-            "NutrientPasteEating_Disgusting",
         };
 
         private static List<string> memesToRemove = new List<string>
@@ -313,7 +259,6 @@ namespace Rimedieval
         public static List<string> questsToRemove = new List<string>
         {
             "EndGame_ShipEscape",
-            "LongRangeMineralScannerLump",
             "ThreatReward_MechPods_MiscReward",
             "OpportunitySite_AncientComplex_Mechanitor",
             "MechanitorShip",
